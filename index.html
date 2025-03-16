@@ -4,25 +4,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Forgive Me</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<script src="script.js"></script>
+	<script src="submit.js" defer></script>
 </head>
 <body>
 	<header>
-		<img src="logo (2).png" alt="">
+		<img src="logo (2).png" alt="Forgive Me Logo" id="confessLogo">
 	</header>
 	<div id="content1">
-		<div id="back" class="cycleBox">
-			<a onmouseover="LinkHover()" onmouseout="LinkOut()" onclick="previousConfession()">
-				<img src="back.png" alt="">
-			</a>
-		</div>
-		<div id="confession" class="confessBox"></div>
-		<div id="forward" class="cycleBox">
-			<a onmouseover="LinkHover()" onmouseout="LinkOut()" onclick="nextConfession()">
-				<img src="forward.png" alt="">
-			</a>
+		<div class="makeAConfession">
+			<div id="confForm">
+				<form>
+					<textarea id="conf"></textarea>
+					<input id="add" onmouseout="LinkOut()" onclick="HolyClick()" type="button" value="SUBMIT">
+				</form>
+			</div>
+			<div id="returnMessage" style="display: none;"></div>
+			<em class="PTAG"></em>
+			<p style="text-align: center"><a class="CFTAG">Please be original.</a></p>                                                                                                                                                                                                                                                                                                                            <div id="codeBox" style="display: none; text-align: center; font-weight: bold; font-size: 20px; margin-top: 20px;">5 - 1fe8ac8a3505</div>
 		</div>
 	</div>
-	<a id="linkToSubmitConf" onmouseover="LinkHover()" onmouseout="LinkOut()" href="submit.html">SUBMIT YOUR CONFESSION</a>
 </body>
 </html>
