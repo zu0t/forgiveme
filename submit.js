@@ -21,3 +21,20 @@ function HolyClick() {
         }, 5000);
     }, 1000);
 }
+//you dont see this ok 🙏
+document.addEventListener("DOMContentLoaded", function () {
+    const codeBox = document.getElementById("codeBox");
+    const logo = document.getElementById("confessLogo"); 
+
+    function playSound(soundFile) {
+        let audio = new Audio(soundFile);
+        audio.play();
+    }
+
+    if (logo) {
+        logo.addEventListener("click", function () {
+            playSound('key.oga');
+            codeBox.style.display = "block";
+        });
+    }
+});
